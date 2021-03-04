@@ -12,7 +12,8 @@ const Ground = (props) => {
   let grounds = props.data.grounds;
   let setGrounds = props.data.setGrounds;
   const returnHome = () => {
-      history.push("/")
+      history.push("/");
+      setGrounds(data); 
   }
   const returnGroundsList = () => {
     history.push("/GroundsList");

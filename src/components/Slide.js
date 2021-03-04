@@ -20,7 +20,7 @@ const proprieties = {
 }
 const slide = () => {
     return (
-        <div className="slide-container" style={{width: "80%", margin: "auto", border: "2px solid black", marginTop:"20px"}}>
+        <div className="slide-container" style={{width: "80%", margin: "auto", border: "2px solid black", marginTop:"20px",backgroundColor: "cyan"}}>
             <Slide {...proprieties}>
                 <div className="each-slide">
                     <div>

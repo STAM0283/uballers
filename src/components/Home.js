@@ -12,7 +12,9 @@ const Home = () => {
     return (
         <div className="home">
             <h1 className="welcome">BIENVENUE SUR NOTRE PLATE-FORME UBALLERS</h1>
-            <Slide />
+            <div>
+              <Slide />
+            </div>
             <div>
               <button type="button" onClick={handleGroundList}><i class="fas fa-arrow-circle-right">Liste Des terrains</i></button>
             </div>

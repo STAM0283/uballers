@@ -20,7 +20,10 @@ const selectGround = (event) => {
       <button type="button" onClick={returnHome}><i class="fas fa-undo-alt"></i>ACCUEIL</button>
       <h1>Liste des terrains</h1>
       {
-        grounds.map((item) => <div id={item.groundId} onClick={selectGround} className="groundsList"><i class="fas fa-arrow-circle-right" onClick={selectGround}></i>{item.address}</div>)
+        grounds.map((item) => <div id={item.groundId} onClick={selectGround} className="groundsList">
+            <i class="fas fa-arrow-circle-right" onClick={selectGround}>
+            </i>{item.groundName}
+            </div>)
       }
     </div>
   );
