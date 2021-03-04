@@ -58,8 +58,11 @@ const Ground = (props) => {
       </div>
       <div className={displayFavorit}>
           <p style={{fontSize: "large", fontWeight: "bolder"}}>Ce terrain a été ajouté à mes favoris</p>
-          <button type="button" onClick={handleGroundsList}><i class="fas fa-undo-alt"></i>SELECTION</button><br/>
-          <button type="button" onClick={returnGroundsList}><i class="fas fa-undo-alt"></i>TERRAINS</button><br/>
+          <div style={{display: "flex", justifyContent:"space-evenly"}}>
+          <button type="button" onClick={handleGroundsList}><i class="fas fa-undo-alt"></i>SELECTION</button>
+          <button type="button" onClick={returnGroundsList}><i class="fas fa-undo-alt"></i>TERRAINS</button>
+          <button type="button" onClick={returnHome}><i class="fas fa-undo-alt"></i>ACCUEIL</button>
+          </div>
           <img className="star" src={star} alt="star about favorite ground"/>
       </div>
     </div>

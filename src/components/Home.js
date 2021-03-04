@@ -15,7 +15,7 @@ const Home = () => {
             <div>
               <Slide />
             </div>
-            <div>
+            <div style={{marginTop: "60px"}}>
               <button type="button" onClick={handleGroundList}><i class="fas fa-arrow-circle-right">Liste Des terrains</i></button>
             </div>
             
