@@ -1,17 +1,22 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import star from '../data/image/star.png';
+import groundsData from '../data/groundsData.json';
+
+const data = Object.values(groundsData);
 
 const Ground = (props) => {
   const [displayList, setDisplayList] = useState("block");
   const [displayFavorit, setDisplayFavorit] = useState("none");
   const history = useHistory(); 
   let grounds = props.data.grounds;
+  let setGrounds = props.data.setGrounds;
   const returnHome = () => {
       history.push("/")
   }
   const returnGroundsList = () => {
-    history.push("/GroundsList")
+    history.push("/GroundsList");
+    setGrounds(data); 
   }
   const handleFavoritGround = () => {
       setDisplayList("none");
@@ -52,7 +57,8 @@ const Ground = (props) => {
       </div>
       <div className={displayFavorit}>
           <p style={{fontSize: "large", fontWeight: "bolder"}}>Ce terrain a été ajouté à mes favoris</p>
-          <button type="button" onClick={handleGroundsList}><i class="fas fa-undo-alt"></i>TERRAINS</button><br/>
+          <button type="button" onClick={handleGroundsList}><i class="fas fa-undo-alt"></i>SELECTION</button><br/>
+          <button type="button" onClick={returnGroundsList}><i class="fas fa-undo-alt"></i>TERRAINS</button><br/>
           <img className="star" src={star} alt="star about favorite ground"/>
       </div>
     </div>

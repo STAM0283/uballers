@@ -8,13 +8,8 @@ const GroundsList = (props) => {
 
 const selectGround = (event) => {
     let id = event.target.id;
-    console.log('ididididid', id);
-    const filterData = grounds.filter((item) => item.groundId === id);
-    setGrounds(filterData);
-    console.log('-----', grounds); 
-    console.log('@@@@@@',filterData);
+    setGrounds(grounds.filter((item) => item.groundId === id));
     history.push("/Ground");
-
 };
   const returnHome = () => {
     history.push("/")
@@ -25,7 +20,7 @@ const selectGround = (event) => {
       <button type="button" onClick={returnHome}><i class="fas fa-undo-alt"></i>ACCUEIL</button>
       <h1>Liste des terrains</h1>
       {
-        grounds.map((item) => <div id={item.groundId} onClick={selectGround} className="groundsList"><i class="fas fa-arrow-circle-right"></i><p className="adress" onClick={selectGround}>{item.address}</p></div>)
+        grounds.map((item) => <div id={item.groundId} onClick={selectGround} className="groundsList"><i class="fas fa-arrow-circle-right" onClick={selectGround}></i>{item.address}</div>)
       }
     </div>
   );

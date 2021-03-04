@@ -13,7 +13,7 @@ const Main = () => {
   const [grounds, setGrounds] = useState(null);
   useEffect(() => {
     setGrounds(data);
-  }, [grounds]);
+  }, []);
   return grounds !== null ? (
     <div className="ground">
       <Switch>
@@ -29,7 +29,8 @@ const Main = () => {
         </Route>
         <Route exact path="/Ground">
           <Ground data={{
-            grounds
+            grounds,
+            setGrounds
           }}
           />
         </Route>
