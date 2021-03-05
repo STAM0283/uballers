@@ -30,9 +30,9 @@ const Ground = (props) => {
   return (
     <div>
         <div className={displayList}>
-          <div style={{marginLeft: "80px"}}>
+          <div className="redirection">
             <button type="button" onClick={returnGroundsList} style={{marginRight: "10px"}}><i class="fas fa-undo-alt"></i>TERRAINS</button>
-            <button type="button" onClick={returnHome}><i class="fas fa-undo-alt"></i>ACCUIEL</button>
+            <button type="button" onClick={returnHome}><i class="fas fa-undo-alt"></i>ACCUEIL</button>
           </div>
           <div style={{display: "flex", justifyContent: "space-evenly", flexWrap: "wrap"}}>
       {
@@ -58,7 +58,7 @@ const Ground = (props) => {
       </div>
       <div className={displayFavorit}>
           <p style={{fontSize: "large", fontWeight: "bolder"}}>Ce terrain a été ajouté à mes favoris</p>
-          <div style={{display: "flex", justifyContent:"space-evenly"}}>
+          <div className="redirectList">
           <button type="button" onClick={handleGroundsList}><i class="fas fa-undo-alt"></i>SELECTION</button>
           <button type="button" onClick={returnGroundsList}><i class="fas fa-undo-alt"></i>TERRAINS</button>
           <button type="button" onClick={returnHome}><i class="fas fa-undo-alt"></i>ACCUEIL</button>

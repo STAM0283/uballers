@@ -17,7 +17,7 @@ const selectGround = (event) => {
 
   return  (
     <div>
-      <button type="button" onClick={returnHome}><i class="fas fa-undo-alt"></i>ACCUEIL</button>
+      <button type="button" onClick={returnHome} style={{width: "130px"}}><i class="fas fa-undo-alt"></i>ACCUEIL</button>
       <h1>Liste des terrains</h1>
       {
         grounds.map((item) => <div id={item.groundId} onClick={selectGround} className="groundsList">

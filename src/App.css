@@ -119,8 +119,69 @@ h3{
 }
 @media (max-width: 375px){
   .groundsList{
-    width: 350px;
-    margin-left: auto;
+    width: 80%;
+    margin-left: 10%;
   }
-
+  .groundDetails{
+    width: 250px;
+  }
+  .redirection{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin-left: 10%;
+    height: 50px;
+    margin-bottom: 20px;
+  }
+ .redirection button {
+   width: 130px;
+   font-size: medium;
+   display: flex;
+ }
+ .redirectList{
+   display: flex;
+   justify-content: space-around;
+ }
+ .redirectList button {
+  width: 110px;
+  font-size: 14px;
+  display: flex;
+ }
+ .welcome{
+   font-size: large;
+ }
+}
+@media (max-width: 414px){
+  .groundsList{
+    width: 80%;
+    margin-left: 10%;
+  }
+  .groundDetails{
+    width: 250px;
+  }
+  .redirection{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin-left: 10%;
+    height: 50px;
+    margin-bottom: 20px;
+  }
+ .redirection button {
+   width: 130px;
+   font-size: medium;
+   display: flex;
+ }
+ .redirectList{
+   display: flex;
+   justify-content: space-around;
+ }
+ .redirectList button {
+  width: 110px;
+  font-size: 14px;
+  display: flex;
+ }
+ .welcome{
+   font-size: large;
+ }
 }
